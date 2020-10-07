@@ -8,11 +8,27 @@
     <title>Hello World</title>
 
 
+    
+
 
 
     <style>
+
+
+
 /* Popup container */
+body {
+    background-color: blue;
+}
+
+.font{
+    font-family: Helvetica, cursive;
+    font-size: 2em;
+    color:crimson
+}
+
 .popup {
+    margin-left: 2cm;
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -63,28 +79,37 @@
   from {opacity: 0;}
   to {opacity:1 ;}
 }
-<script>
-// When the user clicks on <div>, open the popup
-function myFunction() {
-  var popup = document.getElementById("myPopup");
-  popup.classList.toggle("show");
-}
-</script>
 
 
     </style>
 
+<script>
+    // When the user clicks on <div>, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+
+
 </head>
 <body>
-    <h1>Jan</h1>
-    <p>Arbeitgeber:   Wüstenrot & Württembergische Informatik GmbH  </p>
+    <h1 class="font">Jan</h1>
+    <p class="font">Arbeitgeber:   Wüstenrot & Württembergische Informatik GmbH  </p>
+    <p class="font">Auf dieser Welt seit: 8943 Tagen</p>
 
-    <p>Kenntnisse und bekannte Technologien (wilde Auflistung): HTML, CSS, PHP, Bootstrap, AngularJS, TypeScript, SAP (grundlegend), Docker, Git, Java, Maven, DevOps (vieles Rund um Ci/CD und Middleware), Linux, ksh, Assambler, alles was ich vergessen habe</p>
+    <p class="font">Kenntnisse und bekannte Technologien (wilde Auflistung): HTML, CSS, PHP, Bootstrap, AngularJS, TypeScript, SAP (grundlegend), Docker, Git, Java, Maven, DevOps (vieles Rund um Ci/CD und Middleware), Linux, ksh, Assembler, alles was ich vergessen habe</p>
 
-    <div class="popup" onclick="myFunction()">Click me!
-        <span class="popuptext" id="myPopup">Popup text...</span>
+    <div class="popup" onclick="myFunction()" id="click">Klicken Sie hier und gewinnen Sie 1 Geld.
+        <span class="popuptext" id="myPopup">Follow me on YT, Shitstagram and SchülerVZ.</span>
       </div> 
 
 
+      <button id="myButton" class="float-left submit-button" >Home</button>
+
+    
+
+
+      <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
